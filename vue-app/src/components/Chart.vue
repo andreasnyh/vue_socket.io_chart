@@ -49,7 +49,7 @@ export default {
 
 <style>
 .small {
-  max-width: 800px;
+  max-width: 500px;
   margin: 50px auto;
 }
 </style>
