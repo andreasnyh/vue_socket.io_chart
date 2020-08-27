@@ -13,8 +13,9 @@ io.on('connection', (socket) => {
 
       const data = await getRandomValueArray();
 
-      console.log('Sending: ' + JSON.stringify(data, null, 2));
+      console.log('Sending: ' + JSON.stringify(data));
       socket.broadcast.emit('newChartData', data);
+      socket.broadcast.emit('newSpeedometerValue', data[0]);
     }
   }
   sendData();
